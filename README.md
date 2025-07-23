@@ -13,7 +13,7 @@ Global Health Alert Dashboard
 
 ##  How to Run Locally
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/ColombeIgihozo/Global-Health-Alert-Dashboard
 cd Global-Health-Alert-Dashboard
 npm install
 npm run dev
