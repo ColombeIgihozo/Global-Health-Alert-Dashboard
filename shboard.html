@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Health Alert Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Global Health Alert Dashboard</h1>
+    <div id="global-stats"></div>
+    <input type="text" id="search" placeholder="Search country...">
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th onclick="sortData('country')">Country</th>
+          <th onclick="sortData('cases')">Cases</th>
+          <th onclick="sortData('deaths')">Deaths</th>
+          <th onclick="sortData('recovered')">Recovered</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+    <div id="pagination-controls">
+      <button id="prev-btn">« Prev</button>
+      <div id="pagination"></div>
+      <button id="next-btn">Next »</button>
+    </div>
+    <div class="section">
+      <h2>COVID-19 Symptoms</h2>
+      <ul id="symptoms-list">
+        <li>Fever or chills</li>
+        <li>Cough</li>
+        <li>Shortness of breath</li>
+        <li>Fatigue</li>
+        <li>Loss of taste or smell</li>
+        <li>Sore throat</li>
+        <li>Muscle or body aches</li>
+        <li>Headache</li>
+        <li>Congestion or runny nose</li>
+        <li>Nausea or vomiting</li>
+        <li>Diarrhea</li>
+      </ul>
+    </div>
+    <div id="error-message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
