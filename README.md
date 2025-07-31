@@ -12,16 +12,13 @@ Global Health Alert Dashboard
 - Dashboard layout with global summary and country list
 
 # Build backend Docker image
-docker build -t yourdockerhubusername/global-health-backend ./backend
-
-# Build frontend Docker image
-docker build -t yourdockerhubusername/global-health-frontend ./frontend
-
-# Run backend container on port 8081
-docker run -d -p 8081:8081 yourdockerhubusername/global-health-backend
-
-# Run frontend container on port 8080
-docker run -d -p 8080:80 yourdockerhubusername/global-health-frontend
+- docker build -t yourdockerhubusername/global-health-backend ./backend
+- Build frontend Docker image
+- docker build -t yourdockerhubusername/global-health-frontend ./frontend
+- Run backend container on port 8081
+- docker run -d -p 8081:8081 yourdockerhubusername/global-health-backend
+- Run frontend container on port 8080
+- docker run -d -p 8080:80 yourdockerhubusername/global-health-frontend
 
 # Now open your browser and go to:
 # http://localhost:8080
